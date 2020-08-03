@@ -1,0 +1,79 @@
+[
+    {
+        "model": "core.schoolsubject",
+        "pk": 1,
+        "fields": {
+            "school_subject": "Matemática"
+        }
+    },
+    {
+        "model": "core.schoolsubject",
+        "pk": 2,
+        "fields": {
+            "school_subject": "Português"
+        }
+    },
+    {
+        "model": "core.schoolsubject",
+        "pk": 3,
+        "fields": {
+            "school_subject": "História"
+        }
+    },
+    {
+        "model": "core.schoolsubject",
+        "pk": 4,
+        "fields": {
+            "school_subject": "Geografia"
+        }
+    },
+    {
+        "model": "core.schoolsubject",
+        "pk": 5,
+        "fields": {
+            "school_subject": "Química"
+        }
+    },
+    {
+        "model": "core.schoolsubject",
+        "pk": 6,
+        "fields": {
+            "school_subject": "Sociologia"
+        }
+    },
+    {
+        "model": "core.schoolsubject",
+        "pk": 7,
+        "fields": {
+            "school_subject": "Estudos sociais"
+        }
+    },
+    {
+        "model": "core.schoolsubject",
+        "pk": 8,
+        "fields": {
+            "school_subject": "Química"
+        }
+    },
+    {
+        "model": "core.schoolsubject",
+        "pk": 9,
+        "fields": {
+            "school_subject": "Física"
+        }
+    },
+    {
+        "model": "core.schoolsubject",
+        "pk": 10,
+        "fields": {
+            "school_subject": "Biologia"
+        }
+    },
+    {
+        "model": "core.schoolsubject",
+        "pk": 11,
+        "fields": {
+            "school_subject": "Educação física"
+        }
+    }
+]
