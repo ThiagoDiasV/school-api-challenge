@@ -8,10 +8,6 @@
 
 First you need to init a daemon with dockerd, so run dockerd:
 
-    $ dockerd
-
-OR
-
     $ sudo dockerd
 
 And then with Docker and docker-compose, run:
