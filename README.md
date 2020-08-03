@@ -6,12 +6,6 @@
 
 ### Using Dockerfile and docker-compose
 
-# Silvertec Rest API Challenge - Backend
-
-## Install and run
-
-### Using Dockerfile and docker-compose
-
 First you need to init a daemon with dockerd, so run dockerd:
 
     $ dockerd
