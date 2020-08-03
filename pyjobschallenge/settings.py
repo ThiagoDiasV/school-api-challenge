@@ -130,6 +130,7 @@ DEBUG_PROPAGATE_EXCEPTIONS = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+IN_HEROKU = config('IN_HEROKU', default=True)
 
 if IN_HEROKU:
     import dj_database_url
