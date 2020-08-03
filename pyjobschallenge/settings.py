@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pyjobschallenge.core',
     'rest_framework',
+    'drf_yasg',
     'django_filters',
 ]
 
@@ -69,7 +70,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'pyjobschallenge.wsgi.application'
 
-
+DATABASES = {
+    "default": {
+        "ENGINE": config("SQL_ENGINE", default="django.db.backends.sqlite3"),
+        "NAME": config("SQL_DATABASE", default=os.path.join(BASE_DIR, "db.sqlite3")),
+        "USER": config("SQL_USER", default="user"),
+        "PASSWORD": config("SQL_PASSWORD", default="password"),
+        "HOST": config("SQL_HOST", default="localhost"),
+        "PORT": config("SQL_PORT", default="5432"),
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -133,21 +143,6 @@ DEBUG_PROPAGATE_EXCEPTIONS = True
 STATIC_URL = '/static/'
 STATIC_ROOT = f"{BASE_DIR}/pyjobschallenge/staticfiles"
 
-IN_HEROKU = config('IN_HEROKU', default=True)
 
-if IN_HEROKU:
-    import dj_database_url
-    import django_heroku
-    DATABASES = {'default': dj_database_url.config()}
-    django_heroku.settings(locals(), staticfiles=False)
-else:
-    DATABASES = {
-        "default": {
-            "ENGINE": config("SQL_ENGINE", default="django.db.backends.sqlite3"),
-            "NAME": config("SQL_DATABASE", default=os.path.join(BASE_DIR, "db.sqlite3")),
-            "USER": config("SQL_USER", default="user"),
-            "PASSWORD": config("SQL_PASSWORD", default="password"),
-            "HOST": config("SQL_HOST", default="localhost"),
-            "PORT": config("SQL_PORT", default="5432"),
-        }
-    }
+
+
