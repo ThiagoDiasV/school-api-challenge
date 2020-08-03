@@ -29,9 +29,7 @@ This command above will:
 - Run unit tests
 - Run server
 
-Now you will be able to navigate through the School API.
-
-    $ docker-compose down
+Now you will be able to navigate through the School API at localhost:8000.
 
 ### Using local Python 3.8
 
@@ -43,6 +41,8 @@ After installing requirements run:
 
     (venv) $ python manage.py migrate
     (venv) $ python manage.py runserver
+
+The API will be available at localhost:8000
 
 ## Run the tests
 
