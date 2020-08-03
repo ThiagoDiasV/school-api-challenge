@@ -132,7 +132,8 @@ DEBUG_PROPAGATE_EXCEPTIONS = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = f"{BASE_DIR}/pyjobschallenge/staticfiles"
-STATICFILES_STORAGE = 'pyjobschallenge.storage.WhiteNoiseStaticFilesStorage'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 IN_HEROKU = config('IN_HEROKU', default=True)
 
